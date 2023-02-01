@@ -12,6 +12,8 @@ export default defineConfig({
     }
   },
   server:{
+    host:"0.0.0.0",//内网打开
     port:7000,
+    https: false,
   },
 })
