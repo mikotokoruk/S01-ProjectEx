@@ -19,6 +19,13 @@ const state = reactive({
     {name:'admin2',address:'亳州市谯城区',phone:'12345678931'}
   ]
 })
+
+const multipleSelection = ref([])
+const handleSelectionChange = (val) => {
+  multipleSelection.value = val
+}
+
+
 </script>
 
 
@@ -112,10 +119,18 @@ const state = reactive({
 
         <div style="margin: 10px 0">
 <!--          表格区域-->
-          <el-table :data="state.tableData" stripe border>
+          <el-table :data="state.tableData" stripe border @selection-change="handleSelectionChange" >
+            <el-table-column type="selection" width="55" />
             <el-table-column prop="name" label="名称"></el-table-column>
             <el-table-column prop="address" label="地址"></el-table-column>
             <el-table-column prop="phone" label="联系方式"></el-table-column>
+            <el-table-column label="操作" width="180">
+              <template #default="scope">
+                <el-button type="primary">编辑</el-button>
+                <el-button type="danger">删除</el-button>
+
+              </template>
+            </el-table-column>
           </el-table>
         </div>
 
