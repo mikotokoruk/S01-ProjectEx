@@ -49,3 +49,19 @@ app.use(ElementPlus)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/21060aa42b7e4ba794b0d1e8ff2e5f41.png)![在这里插入图片描述](https://img-blog.csdnimg.cn/a4b1bcff67364e6fbaa9f22fdbd8e458.png)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/37f68dd575f2494690c7a5515f94d0fe.png)![请添加图片描述](https://img-blog.csdnimg.cn/5d078c3a028d4d46ada27c2c8a8b6051.jpeg)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/40a00e3c8fb7418c9f6b0749256f3303.png)
+text-align: center 居中
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/a841b149b68b457dbd07317b0b1f5d3d.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2153b2c1e7414b509aa5415ba4cf66b9.png)
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/56ccec7d85064c198ed791bd8c1e0f87.png)
+
+```java
+//国际化 在main.js 中
+import ElementPlus from 'element-plus'
+import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
+
+app.use(ElementPlus, {
+  locale: zhCn,
+})
+```
