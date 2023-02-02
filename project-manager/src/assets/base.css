@@ -72,3 +72,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+.ml5{
+  margin-left: 5px;
+}
+
+.w300{
+  width: 300px;
+}
+
+th{
+  /*//表格颜色*/
+  background-color: powderblue !important;
+}
